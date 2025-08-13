@@ -21,3 +21,10 @@ Compression (part 3 step 5):
 - reduces file size during transfer which will improve load time.
 - verified in chrome dev tools under network tab, inspected the HTML file "Content-Encoding: gzip" header is there.
 ----------------------
+Obscure Server Identity (part 3 step 6):
+1. enabled mod_headers and confirm headers_module (Shared) was loaded.
+2. edited virtual host config where i added
+   "Header always unset Server" & "Header always set Server "CSE135 Server"
+   to .site.conf and .site-le-ssl.conf. this removed default server header
+3. restarted apache, verified change in both curl and dev tools that server reflected change.
+-----------------------
