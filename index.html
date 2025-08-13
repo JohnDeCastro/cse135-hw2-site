@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE 135 HW1</title>
+
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.5.10/css/pico.min.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Home - CSE 135 HW1</h1>
+    <p id="live"></p>
+    <nav>
+      <ul>
+        <li><a href="/members/johndecastro.html">Member: John De Castro</a></li>
+        <li><a href="/hw1/hello.php">HW1: PHP Test</a></li>
+        <li><a href="/hw1/report.html">HW1: GoAccess Report</a></li>
+      </ul>
+    </nav>
+  </main>
+
+  <script>
+    document.getElementById('live').textContent = "Live @ " + new Date().toString();
+  </script>
+</body>
+</html>
