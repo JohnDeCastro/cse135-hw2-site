@@ -11,7 +11,13 @@ Setup:
 3. Configured secrets where private key, server host, server user, and server paths are stored
 4. Setup Droplet where dedicated SSH key was generated for actions and isntalled rsync on droplet.
 5. Lastly, Github-Deploy,mp4 in repo showcases editing of file, commit and push to github, where actions run successfuly and updates site.
-
-Basic Auth:
+----------------------
+Basic Auth (part 3 step 4):
 User Name: teamuser
 Password: cse135!!
+----------------------
+Compression (part 3 step 5):
+- enabled mod_deflate to compress HTML, CSS, and JS before sending o client. 
+- reduces file size during transfer which will improve load time.
+- verified in chrome dev tools under network tab, inspected the HTML file "Content-Encoding: gzip" header is there.
+----------------------
