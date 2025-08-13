@@ -11,3 +11,7 @@ Setup:
 3. Configured secrets where private key, server host, server user, and server paths are stored
 4. Setup Droplet where dedicated SSH key was generated for actions and isntalled rsync on droplet.
 5. Lastly, Github-Deploy,mp4 in repo showcases editing of file, commit and push to github, where actions run successfuly and updates site.
+
+Basic Auth:
+User Name: teamuser
+Password: cse135!!
