@@ -31,6 +31,7 @@ jobs:
             --exclude ".github/" \
             --exclude "hw2/screenshots/" \
             --exclude "cgi-bin/py/sessions/" \
+            --exclude "cgi-bin/c/**" \
             -e 'ssh -o StrictHostKeyChecking=no' \
             ./ "${{ secrets.SERVER_USER }}@${{ secrets.SERVER_HOST }}:${{ secrets.SERVER_PATH }}/"
 
