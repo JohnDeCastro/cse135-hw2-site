@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import os, sys, http.cookies, uuid, pathlib, urllib.parse
 
-SESSDIR = "/var/www/johndecastro.site/cgi-bin/py/_sessions"
+SESSDIR = "/var/www/johndecastro.site/cgi-bin/py/sessions"
 pathlib.Path(SESSDIR).mkdir(parents=True, exist_ok=True)
 
 def read_body():
